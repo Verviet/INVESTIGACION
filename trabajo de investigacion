@@ -38,7 +38,7 @@ funcion parte_A1()
 				Escribir "su respuesta es FALSE por lo que su tipo de variable es logica"
 				Esperar Tecla
 			6: Escribir "Saliendo..."
-				Esperar Tecla
+				Esperar tecla
 		FinSegun
 	FinMientras
 FinFuncion
@@ -73,7 +73,7 @@ Funcion ParteA_2()
 				Escribir "El modulo de ambos numeros es: ", c
 				Esperar Tecla
 			2: Escribir "Saliendo..."
-				Esperar Tecla
+				Esperar tecla
 		FinSegun
 		
 	FinMientras
@@ -106,7 +106,7 @@ Funcion PARTEA_3()
 				Escribir "El resolvente x2 es: ", e
 				Esperar Tecla
 			2: Escribir "Saliendo..."
-				Esperar Tecla
+				Esperar tecla
 		FinSegun
 		
 	FinMientras
@@ -135,7 +135,7 @@ Funcion PARTEA_4()
 				Esperar Tecla
 				
 			2: Escribir "Saliendo..."
-				Esperar Tecla
+				Esperar tecla
 		FinSegun
 		
 	FinMientras
@@ -165,7 +165,7 @@ Funcion PARTEA_5()
 				Esperar Tecla
 				
 			2: Escribir "Saliendo..."
-				Esperar Tecla
+				Esperar tecla
 		FinSegun
 		
 	FinMientras
@@ -204,7 +204,7 @@ Funcion PARTEA_6()
 				Escribir "El numero binario en decimal es: ", c
 				Esperar Tecla
 			2: Escribir "Saliendo..."
-				Esperar Tecla
+				Esperar tecla
 		FinSegun
 		
 	FinMientras
@@ -220,6 +220,7 @@ Funcion  PARTE_B_1()
 	//Salida: Escribir (presentar en pantalla) la cantidad en numeros de u. d. c. y u.m.
 	Definir num, uni,dec, cent, unim Como entero;
 	Borrar Pantalla
+	Escribir " Presentar las unidades, decenas, centenas y unidades de mil de un numero ";
 	Escribir "Ingrese un numero de 4 DIGITOS";
 	Leer num;
 	si num >99 y num <9999 Entonces
@@ -232,7 +233,7 @@ Funcion  PARTE_B_1()
 		unim <- num mod 10;
 	FinSi
 	Escribir "En el numero ingresado las unidades de mil son ", unim, " las centenas son ", cent , " las decenas son ", dec , " y las unidades son ", uni;
-	Esperar Tecla
+	Esperar tecla
 FinFuncion
 //*************************************************************************************************************
 //*************************************************************************************************************
@@ -245,6 +246,8 @@ Funcion PARTE_B_2()
 	Definir c1 Como Caracter;
 	Definir c2 Como Caracter;
 	Borrar Pantalla
+	Escribir " Dado dos caracteres indicar si el primer carácter es igual, mayor o menor que el segundo"
+	escribir "Dado un carácter indicar si es un digito o una consonante o un carácter especial"
 	Escribir "Ingrese dos caracteres";
 	Leer c1;
 	Leer c2;
@@ -259,7 +262,7 @@ Funcion PARTE_B_2()
 	si c1< c2 Entonces
 		Escribir "El caracter:  ", c1, " es menor al caracter 2:  ", c2 ;
 	FinSi
-	Esperar Tecla
+	Esperar tecla
 FinFuncion
 //*************************************************************************************************************
 //*************************************************************************************************************
@@ -270,6 +273,7 @@ Funcion  PARTE_B_3()
 	//Proceso: Verificar si el caracter esta dentro del rango de valores que corresponden a las consonantes
 	//Salida:Escribir (presentar en pantalla) si el caracter es conconante o caracter especial
 	Borrar Pantalla
+	escribir " Dado un carácter indicar si es un digito o una consonante o un carácter especial. "
 	Escribir "Ingrese un carácter:";
 	Leer car;
 	Si car >= "0" Y car <= "9" Entonces
@@ -280,7 +284,7 @@ Funcion  PARTE_B_3()
 			
 		FinSi
 	FinSi
-	Esperar Tecla
+	Esperar tecla
 FinFuncion
 //*************************************************************************************************************
 //*************************************************************************************************************
@@ -293,6 +297,7 @@ Funcion  PARTE_B_4()
 	Definir textow Como Caracter;
 	Definir x Como real;
 	Borrar Pantalla
+	escribir " Dada una frase cualquiera presentarla en mayúscula y minuscula "
 	Escribir "Ingrese una frase";
 	Leer textow;
 	Escribir "Convertir frase a mayuscula y minuscula";
@@ -304,7 +309,7 @@ Funcion  PARTE_B_4()
 	SiNo
 		Escribir "Gracias por utilizar este programa";
 	FinSi
-	Esperar Tecla
+	Esperar tecla
 FinFuncion
 //*************************************************************************************************************
 //*************************************************************************************************************
@@ -315,6 +320,7 @@ Funcion PARTE_B_5()
 	//premisas crea un algoritmo que lea una fecha como un en tres variables: aaaa,mes, dia, y
 	//luego indique si el año de la fecha es un año bisiesto o no.
 	Borrar Pantalla
+	escribir " Indicar si es un año bisiesto"
 	Definir ann, mes, dia como real;
 	Escribir "Ingrese una año";
 	Leer ann;
@@ -327,7 +333,7 @@ Funcion PARTE_B_5()
 	SiNo
 		Escribir "El año ingresado no corresponde a un año bisiesto";
 	FinSi
-	Esperar Tecla
+	Esperar tecla
 FinFuncion
 //*************************************************************************************************************
 //*************************************************************************************************************
@@ -340,6 +346,7 @@ Funcion  PARTE_B_6()
 	//Escribir (presentar en pantalla) si el numero es capicúa o no 
 	Definir num, v1, v2 Como Entero;
 	Borrar Pantalla
+	escribir " determinar si el numero ingresado de cinco digitos es capicua"
 	Escribir "Ingrese un numero de 5 digitos ";
 	Leer num;
 	
@@ -350,15 +357,18 @@ Funcion  PARTE_B_6()
 	SiNo
 		Escribir "El numero ingresado" , num, " NO ES CAPICUA";
 	FinSi
-	Esperar Tecla
+	Esperar tecla
 FinFuncion
 //*************************************************************************************************************
 //*************************************************************************************************************
 Funcion PARTE_C_1()
+	//Para un valor entero positivo que representa una cantidad en segundos, indicar su
+	//equivalente en minutos, horas y días.
 	// Declarar variables
 	Definir valorSegundos, minutos, horas, dias Como Real
 	Borrar Pantalla
 	// Leer el valor en segundos
+	escribir " ingresar una cantidad en segundos e indicar su equivalente en minutos, horas y dias "
 	Escribir "Ingrese el valor en segundos:"
 	Leer valorSegundos
 	
@@ -375,15 +385,18 @@ Funcion PARTE_C_1()
 	Escribir "Equivalente en minutos:", minutos
 	Escribir "Equivalente en horas:", horas
 	Escribir "Equivalente en días:", dias
-	Esperar Tecla
+	Esperar tecla
 FinFuncion
 //*************************************************************************************************************
 //*************************************************************************************************************
 Funcion PARTEC_2()
-	// Declarar variables
+	//Dados tres números enteros positivos A, B y C, ¿Determine si son iguales? ¿cuál de ellos es
+	//el mayor? y ¿cuál es el segundo mayor?
+    // Declarar variables
 	Definir A, B, C Como Entero
 	Borrar Pantalla
 	// Leer los números
+	Escribir " Dados tres números enteros positivos A, B y C, ¿Determine si son iguales? "
 	Escribir "Ingrese el número A:"
 	Leer A
 	Escribir "Ingrese el número B:"
@@ -417,51 +430,77 @@ Funcion PARTEC_2()
 		segundoMayor <- C
 	FinSi
 	Escribir "El segundo mayor es:", segundoMayor
-	Esperar Tecla
+	Esperar tecla
 FinFuncion
 //*************************************************************************************************************
 //*************************************************************************************************************
 funcion PARTEC_3()
-// Declarar variables
-Definir horaEntrada, minutoEntrada, horaSalida, minutoSalida Como Entero
-Definir montoTotal Como Real
-Borrar Pantalla
-// Leer la hora de entrada
-Escribir "Ingrese la hora de entrada (formato 24 horas):"
-Escribir "Hora:"
-Leer horaEntrada
-Escribir "Minuto:"
-Leer minutoEntrada
-
-// Leer la hora de salida
-Escribir "Ingrese la hora de salida (formato 24 horas):"
-Escribir "Hora:"
-Leer horaSalida
-Escribir "Minuto:"
-Leer minutoSalida
-
-// Calcular el tiempo de estacionamiento en minutos
-Definir tiempoEstacionamiento, horasEstacionamiento Como Entero
-tiempoEstacionamiento <- (horaSalida * 60 + minutoSalida) - (horaEntrada * 60 + minutoEntrada)
-horasEstacionamiento <- tiempoEstacionamiento / 60
-
-// Calcular el monto a pagar
-Si tiempoEstacionamiento < 30 Entonces
-	montoTotal <- 0.50
-Sino
-	montoTotal <- horasEstacionamiento * 1.5
-FinSi
-
-// Imprimir el monto a pagar
-Escribir "El monto a pagar es: $", montoTotal
-Esperar Tecla
+	//En un estacionamiento el monto a pagar se calcula multiplicando el número dehoras que
+	//permaneció el automóvil dentro del estacionamiento por $1.5 la hora.La fracion en
+	//minutos de (1- 29 minutos) se cobra $0.5. Pasado de 30 minutos se cobra el valor de la hora
+	//Ahora se desea que usted elabore un algoritmo que a partir de la hora de entraday la
+	//hora de salida de un vehículo (las mismas corresponden a un mismo día) calcule el monto
+	//a pagar por el dueño del vehículo.
+	//La entrada vendrá dada por dos enteros positivos el primero representa las horasy el
+	//segundo los minutos
+	
+	// Declarar variables
+	Definir horaEntrada, minutoEntrada, horaSalida, minutoSalida Como Entero
+	Definir montoTotal Como Real
+	Borrar Pantalla
+	// Leer la hora de entrada
+	escribir "a partir de la hora de entraday la hora de salida de un vehículo (las mismas corresponden a un mismo día) calcule el monto a pagar por el dueño del vehículo."
+	Escribir "Ingrese la hora de entrada (formato 24 horas):"
+	Escribir "Hora:"
+	Leer horaEntrada
+	Escribir "Minuto:"
+	Leer minutoEntrada
+	
+	// Leer la hora de salida
+	Escribir "Ingrese la hora de salida (formato 24 horas):"
+	Escribir "Hora:"
+	Leer horaSalida
+	Escribir "Minuto:"
+	Leer minutoSalida
+	
+	// Calcular el tiempo de estacionamiento en minutos
+	Definir tiempoEstacionamiento, horasEstacionamiento Como Entero
+	tiempoEstacionamiento <- (horaSalida * 60 + minutoSalida) - (horaEntrada * 60 + minutoEntrada)
+	horasEstacionamiento <- tiempoEstacionamiento / 60
+	
+	// Calcular el monto a pagar
+	Si tiempoEstacionamiento < 30 Entonces
+		montoTotal <- 0.50
+	Sino
+		montoTotal <- horasEstacionamiento * 1.5
+	FinSi
+	
+	// Imprimir el monto a pagar
+	Escribir "El monto a pagar es: $", montoTotal
+	Esperar tecla
 FinFuncion
 //*************************************************************************************************************
 //*************************************************************************************************************
 Funcion PARTEC_4()
+	//El IMC resulta de la división de la masa del individuo (en kilogramos) entre el cuadrado de
+	//la estatura (en metros). El índice de masa corporal es un indicadordel peso de una
+	//persona en relación con su altura.
+    //Clasificación del IMC de acuerdo con la OMS de la ONU:
+    //a. Menor a 16: Criterio de ingreso.
+    //b. 16 a 16.9: infra peso.
+    //c.17 a 18.4: bajo peso.
+    //d. 18.5 a 24.9: peso normal.
+    //e. 25 a 29.9: sobrepeso.
+    //f. 30 a 34.9: obesidad pre-mórbida.
+    //g. 40 a 45: obesidad mórbida.
+    //h. Mayor a 45: obesidad híper-mórbida.
+	//Dado el peso de una persona en libras (1 libra = 0,453592 Kg) y su estatura en
+	//centímetros, calcule su IMC e indique como salida el peso en kilogramos, el valorde IMC
+	//de la persona y la categoría en la cual fue clasificado.
 	// Constantes
-	 LIBRA_A_KG <- 0.453592
+	LIBRA_A_KG <- 0.453592
 	Borrar Pantalla
+	Escribir  " calcular el peso en kilogramos, el valorde IMC de la persona y la categoría en la cual fue clasificado."
 	Definir constante Como Logica
 	
 	// Variables
@@ -508,13 +547,13 @@ Funcion PARTEC_4()
 		FinSi
 	FinSi
 	
-				
-							
-							// Salida de resultados
-							Escribir "El peso en kilogramos es:", pesoKg
-							Escribir "El valor de IMC es:", IMC
-							Escribir "La categoría en la que fue clasificado es:", categoria
-							Esperar Tecla
+	
+	
+	// Salida de resultados
+	Escribir "El peso en kilogramos es:", pesoKg
+	Escribir "El valor de IMC es:", IMC
+	Escribir "La categoría en la que fue clasificado es:", categoria
+	Esperar tecla
 FinFuncion
 //*************************************************************************************************************
 //*************************************************************************************************************
@@ -528,6 +567,7 @@ FinFuncion
 Funcion PARTE_D_1()
 	Borrar Pantalla
 	Definir dia, mes, diasanterior como Entero
+	Escribir " Calcular el numero de dias que han pasado desde el 1 de Enero del 2014 hasta la fecha ingresada"
 	escribir "Estimado usuario a continuacion ingrese una fecha del año 2014 "
 	Escribir "Ingrese el numero del día:"
 	Leer dia
@@ -574,7 +614,7 @@ Funcion PARTE_D_1()
 	
 	Escribir "El número de días pasados desde el 1 de enero de 2014 hasta la fecha " ,dia , "/" mes "/2014" " es:", diasanterior
 	Escribir ""
-	Esperar Tecla
+	Esperar tecla
 FinFuncion
 //*************************************************************************************************************
 //*************************************************************************************************************
@@ -585,6 +625,7 @@ FinFuncion
 Funcion PARTE_D_2()
 	Definir numeroMes Como Entero
 	Borrar Pantalla
+	Escribir " ingresar un numero e indicar el numero del mes correspondiente "
 	Escribir " Ingrese el numero de un mes "
 	Leer numeroMes
 	Segun numeroMes Hacer
@@ -615,7 +656,7 @@ Funcion PARTE_D_2()
 		De Otro Modo:
 			Escribir " ** El numero ingresado no corresponde a ningun mes ** "
 	Fin Segun
-	Esperar Tecla
+	Esperar tecla
 FinFuncion
 //*************************************************************************************************************
 //*************************************************************************************************************
@@ -631,6 +672,7 @@ FinFuncion
 Funcion PARTE_D_3()
 	Definir valorCompra, descuento, montoTotal Como Real
 	Borrar Pantalla
+	Escribir " Calcular el monto total al pagar de una compra, si su compra pasa de los $1000 se aplicara un descuento del 20% "
 	Escribir " Ingrese el valor valor de su compra "
 	Leer valorCompra 
 	
@@ -645,7 +687,7 @@ Funcion PARTE_D_3()
 		Escribir " Su valor total a pagar es de: $",valorCompra
 		Escribir " MUCHAS GRACIAS POR SU COMPRA "
 	FinSi
-	Esperar Tecla
+	Esperar tecla
 FinFuncion
 //*************************************************************************************************************
 //*************************************************************************************************************
@@ -661,6 +703,7 @@ Funcion PARTE_D_4()
 	Borrar Pantalla
 	Definir n1,n2,resul Como Real
 	Definir operacion Como Caracter
+	Escribir " calcular el resultado de las siguientes operaciones matematicas "
 	Escribir " Ingrese dos numeros"
 	Leer n1
 	Leer n2
@@ -694,7 +737,7 @@ Funcion PARTE_D_4()
 		De Otro Modo:
 			Escribir " La operacion ingresada no esta registrada "
 	Fin Segun
-	Esperar Tecla
+	Esperar tecla
 FinFuncion
 
 //*************************************************************************************************************
@@ -706,6 +749,7 @@ FinFuncion
 Funcion PARTE_D_5()
 	Borrar Pantalla
 	Definir num,contador Como Entero;
+	Escribir " Ingresar un numero e indicar cuantos digitos tiene"
 	Escribir " Estimado usuario ingrese un numero ";
 	Leer num;
 	contador = 0;
@@ -714,7 +758,7 @@ Funcion PARTE_D_5()
 		contador= contador+1
 	Fin Mientras
 	Escribir "El número ingresado tiene ",contador," digitos";
-	Esperar Tecla
+	Esperar tecla
 FinFuncion
 //*************************************************************************************************************
 //*************************************************************************************************************
@@ -727,6 +771,7 @@ FinFuncion
 Funcion PARTE_D_6()
 	Borrar Pantalla
 	Definir numero, numeroinvertido, digito, numeroriginal, resto Como Entero
+	Escribir " Ingresar un numero e indicar si es capicua"
 	Escribir " ingrese un numero "
 	Leer numero
 	numeroriginal<- numero
@@ -741,13 +786,15 @@ Funcion PARTE_D_6()
 	SiNo
 		Escribir " El numero ingresado no es un numero capicua "
 	FinSi
-	Esperar Tecla
+	Esperar tecla
 FinFuncion
 //*************************************************************************************************************
 //*************************************************************************************************************
+//Escribir un algoritmo que presente los divisores de un numero
 Funcion PARTE_E_1()
 	Borrar Pantalla
 	Definir numero1,divisor Como Entero;
+	Escribir " Indicar los divisores de un numero"
 	Escribir "Ingrese un numero"
 	Leer numero1;
 	
@@ -760,14 +807,15 @@ Funcion PARTE_E_1()
 		FinSi
 		divisor <- divisor + 1;
 	FinMientras
-	Esperar Tecla
+	Esperar tecla
 FinFuncion
 //*************************************************************************************************************
 //*************************************************************************************************************
+//Escribir un algoritmo que presente la suma de los divisores de un numero
 Funcion PARTE_E_2()
 	Borrar Pantalla
 	Definir n1, divisor, suma Como Entero;
-	
+	Escribir " calcular la suma de los divisores de un numero"
 	Escribir "Ingrese un numero"
 	Leer n1;
 	
@@ -782,13 +830,15 @@ Funcion PARTE_E_2()
 	FinMientras
 	
 	Escribir "La suma de los divisores de ", n1, " es: ", suma;
-	Esperar Tecla
+	Esperar tecla
 FinFuncion
 //*************************************************************************************************************
 //*************************************************************************************************************
+//Escribir un algoritmo que presente la cantidad de los divisores de un numero
 FUNCION PARTE_E_3()
 	Definir nu2, cantidad, divisor Como Entero;
 	Borrar Pantalla
+	Escribir " Indicar la cantidad de divisores de un numero "
 	Escribir "Ingrese un numero"
 	Leer nu2;
 	
@@ -803,13 +853,19 @@ FUNCION PARTE_E_3()
 	FinMientras
 	
 	Escribir "La cantidad de divisores de ", nu2, " es: ", cantidad;
-	Esperar Tecla
+	Esperar tecla
 FinFuncion
 //*************************************************************************************************************
 //*************************************************************************************************************
+//Escribir un algoritmo que indique si un número es perfecto
+//Nota: un número es perfecto cuando la suma de los divisores del número incluido el 1 y
+//excluido el propio número es igual al numero
+//Ejemplo: numero=6: los divisores del 6 son: 1+2+3=6
+
 Funcion PARTE_E_4()
 	Definir nu3, suma_divisores, divisor Como Real;
 	Borrar Pantalla
+	Escribir " Indicar si un numero es perfecto"
 	Escribir "Ingrese un numero"
 	Leer nu3;
 	
@@ -826,15 +882,18 @@ Funcion PARTE_E_4()
 	Sino
 		Escribir nu3,   " no es un número perfecto";
 	FinSi
-	Esperar Tecla
+	Esperar tecla
 FinFuncion
 //*************************************************************************************************************
 //*************************************************************************************************************
+//Dado un número N determinar si es un número primo.
+//Nota: Un número primo es aquel que solo es divisible por 1(uno) y por el mismo.
 Funcion PARTE_E_5()
-Definir num, i Como Entero
-Definir esPrimo como Logico
+	Definir num, i Como Entero
+	Definir esPrimo como Logico
 	Borrar Pantalla
-    Escribir "Ingrese un número:"
+    Escribir " Indicar si es un numero primo"
+	Escribir "Ingrese un número:"
     Leer num
 	
     esPrimo <- Verdadero
@@ -854,13 +913,16 @@ Definir esPrimo como Logico
     sino
         Escribir num, " no es un número primo."
     fin si
-	Esperar Tecla
+	Esperar tecla
 FinFuncion
 //*************************************************************************************************************
 //*************************************************************************************************************
+//Construya un programa que dado un valor entero N, haga el cálculo de la función factorial
+//utilizando estructuras iterativas.
 Funcion PARTE_E_6()
 	Definir N, i, factorial Como Entero;
 	Borrar Pantalla
+	Escribir " Indicar el calculo factorail de un numero "
 	Escribir "Ingrese un numero"
 	Leer N;
 	factorial <- 1;
@@ -872,7 +934,7 @@ Funcion PARTE_E_6()
 	FinMientras
 	
 	Escribir "El factorial de ", N, " es: ", factorial;
-	Esperar Tecla
+	Esperar tecla
 FinFuncion
 //*************************************************************************************************************
 //*************************************************************************************************************
@@ -885,6 +947,7 @@ Funcion PARTE_F_1()
 	//	salida estándar.
 	Definir n Como Caracter
 	Borrar Pantalla
+	escribir " Indicar si la contraseña ingresada por el usuario es correcta  " 
 	Repetir
 		Escribir "Ingrese una contraseña"
 		Leer n
@@ -893,7 +956,7 @@ Funcion PARTE_F_1()
 		FinSi
 	Hasta Que Longitud(n) >= 10
 	Escribir "Contraseña segura";
-	Esperar Tecla
+	Esperar tecla
 FinFuncion
 //*************************************************************************************************************
 //*************************************************************************************************************
@@ -904,6 +967,7 @@ Funcion PARTE_F_2()
 	Borrar Pantalla
 	Definir num, nummayor , nummenor Como Entero
 	Definir primerNumero Como Logico
+	Escribir " Calcular el valor de cada numero e indicar cual es el mayor y menor  "
 	Escribir "Ingrese una secuencia de números y termina al ingresar el (0):"
 	Leer num;
 	primerNumero <- Verdadero
@@ -927,7 +991,7 @@ Funcion PARTE_F_2()
 	
 	Escribir "El número mayor es:", nummayor
 	Escribir "El número menor es:", nummenor	
-	Esperar Tecla
+	Esperar tecla
 FinFuncion
 //*************************************************************************************************************
 //*************************************************************************************************************
@@ -951,6 +1015,7 @@ Funcion PARTE_F_3()
 	sumaPeso <- 0
 	sumaEstatura <- 0
 	contadorPersonas <- 0
+	Escribir " determinar la edad promedio, peso, estatura de personas "
 	Escribir "Ingrese la secuencia de datos pedidos: edad, peso, estatura. El programa terminara cuando se ingrese el (0):"
 	Leer edad
 	
@@ -986,7 +1051,7 @@ Funcion PARTE_F_3()
 		Escribir "Cantidad de personas mayores a 36 años:", contMayores36;
 	FinSi	
 	
-	Esperar Tecla
+	Esperar tecla
 FinFuncion
 //*************************************************************************************************************
 //*************************************************************************************************************
@@ -995,7 +1060,7 @@ Funcion PARTE_F_4()
 	//		hasta la del 10.
 	Borrar Pantalla
 	Definir i , j , resultado Como Entero
-	
+	Escribir " Tabla de multiplicar desde el 1 al 10"
 	Para i <- 1 Hasta 12 Hacer
 		Escribir "*Tabla del ",i;
 		Para j <- 1 Hasta 12 Hacer
@@ -1003,7 +1068,7 @@ Funcion PARTE_F_4()
 			Escribir i, "*",j "=",resultado
 		FinPara
 	FinPara
-	Esperar Tecla
+	Esperar tecla
 FinFuncion
 //*************************************************************************************************************
 //*************************************************************************************************************
@@ -1011,6 +1076,7 @@ Funcion PARTE_F_5()
 	//	Escribir un algoritmo que multiplique dos números por medio de sumas sucesivas.
 	Borrar Pantalla
 	Definir num1,num2,contador,resultado Como Entero;
+	Escribir " Calcular la multiplicacion de dos numeros por medio de sumas sucesivas "
 	Escribir "Ingrese el primer numero : "
 	Leer num1;
 	Escribir "Ingrese el segundo numero :";
@@ -1023,7 +1089,7 @@ Funcion PARTE_F_5()
 		contador <- contador + 1;
 	FinMientras
 	Escribir "El resultado de la multipicacion es :",resultado;
-	Esperar Tecla
+	Esperar tecla
 FinFuncion
 //*************************************************************************************************************
 //*************************************************************************************************************
@@ -1035,6 +1101,7 @@ Funcion PARTE_F_6()
 	Definir promedio Como Real;
 	contador <- 0;
 	suma <- 0;
+	Escribir " Calcular el promedio de una serie numerica "
 	Escribir "Ingrese un número. El programa termina cuando ingrese 0 :"
 	Leer n;
 	Mientras n <> 0 Hacer
@@ -1047,7 +1114,7 @@ Funcion PARTE_F_6()
 		Escribir "El resultado es : ",promedio;
 		
 	FinSi
-	Esperar Tecla
+	Esperar tecla
 FinFuncion
 //*************************************************************************************************************
 //*************************************************************************************************************
@@ -1055,6 +1122,7 @@ Funcion PARTE_F_7()
 	//	Escribir un algoritmo que divida dos números por medio de restas sucesivas.
 	Borrar Pantalla
 	Definir num1 , num2 , contador,resulado Como entero;
+	escribir " Calcular la division de dos numeros por medio de restas sucesivas "
 	Escribir "Ingrese el dividendo :";
 	Leer num1
 	Escribir "Ingrese el divisor :"
@@ -1066,7 +1134,7 @@ Funcion PARTE_F_7()
 	FinMientras
 	Escribir "El resultado de la división es : ",contador;
 	Escribir ""
-	Esperar Tecla
+	Esperar tecla
 FinFuncion
 //*************************************************************************************************************
 //*************************************************************************************************************
@@ -1085,148 +1153,146 @@ Algoritmo EXPOALGORITMO
 		item2<-1
 		mientras item2 <> 0 Hacer
 			
-		
 			segun item Hacer
-			
-			
+				
+				1:  Borrar Pantalla
+					Escribir "Estructuras Selectivas"
+					Escribir "1. Ejercicio #1" 
+					Escribir "2. Ejercicio #2"
+					Escribir "3. Ejercicio #3"
+					Escribir "4. Ejercicio #4"
+					Escribir "5. Ejercicio #5"
+					Escribir "6. Ejercicio #6"
+					Escribir "7. Ejercicio #7"
+					Escribir "8. Ejercicio #8"
+					Escribir "9. Ejercicio #9"
+					Escribir "10. Ejercicio #10"
+					Escribir "0. Volver al Menú principal"
+					Escribir ""
+					leer item2 
 					
-				
-			1:  Borrar Pantalla
-				Escribir "Estructuras Selectivas"
-				Escribir "1. Ejercicio #1" 
-				Escribir "2. Ejercicio #2"
-				Escribir "3. Ejercicio #3"
-				Escribir "4. Ejercicio #4"
-				Escribir "5. Ejercicio #5"
-				Escribir "6. Ejercicio #6"
-				Escribir "7. Ejercicio #7"
-				Escribir "8. Ejercicio #8"
-				Escribir "9. Ejercicio #9"
-				Escribir "10. Ejercicio #10"
-				Escribir "0. Volver al Menú principal"
-				Escribir ""
-				leer item2 
-				
-				segun item2 Hacer
-					
-					1: parte_A1()
-					2: ParteA_2()
-					3: PARTEA_3()
-					4: PARTEA_4()
-					5: PARTEA_5()
-					6: PARTEA_6()
-					7: PARTE_B_1()
-					8: PARTE_B_2()
-					9: PARTE_B_3()
-					10: PARTE_B_4()
-					0:  Borrar Pantalla
-					   Escribir "Volviendo al menú principal..."
-					   Escribir ""
-					   Esperar 1 Segundos
-				   De Otro Modo:
-					    Borrar Pantalla
-						Escribir "No ha seleccionado una opcion valida"
-						Escribir ""
-						Esperar Tecla
-				FinSegun
-				
-			2:  Borrar Pantalla
-				Escribir "Estructuras Condicionales"
-				Escribir "1. Ejercicio #1" 
-				Escribir "2. Ejercicio #2"
-				Escribir "3. Ejercicio #3"
-				Escribir "4. Ejercicio #4"
-				Escribir "5. Ejercicio #5"
-				Escribir "6. Ejercicio #6"
-				Escribir "7. Ejercicio #7"
-				Escribir "8. Ejercicio #8"
-				Escribir "9. Ejercicio #9"
-				Escribir "10. Ejercicio #10"
-				Escribir "0. Volver al Menú principal"
-				Escribir ""
-				leer item2
-				
-				
-				segun item2 Hacer
-					
-					1: PARTE_B_5()	
-					2: PARTE_B_6()
-					3: PARTE_C_1()
-					4: PARTEC_2()
-					5: PARTEC_3()
-					6: PARTEC_4()
-					7: PARTE_D_1()
-					8: PARTE_D_2()
-					9: PARTE_D_3()
-					10: PARTE_D_4()
-					0:  Borrar Pantalla
-						Escribir "Volviendo al menú principal..."
-						Escribir ""
-						Esperar 1 Segundos
-					De Otro Modo:
-						Borrar Pantalla
-						Escribir "No ha seleccionado una opcion valida"
-						Escribir ""
+					segun item2 Hacer
 						
-				FinSegun
-				
-			3:  Borrar Pantalla
-				Escribir "Estructuras Iterativas"
-				Escribir "1. Ejercicio #1" 
-				Escribir "2. Ejercicio #2"
-				Escribir "3. Ejercicio #3"
-				Escribir "4. Ejercicio #4"
-				Escribir "5. Ejercicio #5"
-				Escribir "6. Ejercicio #6"
-				Escribir "7. Ejercicio #7"
-				Escribir "8. Ejercicio #8"
-				Escribir "9. Ejercicio #9"
-				Escribir "10. Ejercicio #10"
-				Escribir "11. Ejercicio #11"
-				Escribir "12. Ejercicio #12"
-				Escribir "13. Ejercicio #13"
-				Escribir "14. Ejercicio #14"
-				Escribir "15. Ejercicio #15"
-				Escribir "0. Volver al Menú principal"
-				Escribir ""
-				leer item2
-				
-				segun item2 Hacer
+						1: parte_A1() 
+						2: ParteA_2()
+						3: PARTEA_3()
+						4: PARTEA_4()
+						5: PARTEA_5()
+						6: PARTEA_6()
+						7: PARTE_B_1()
+						8: PARTE_B_2()
+						9: PARTE_B_3()
+						10: PARTE_B_4()
+						0:  Borrar Pantalla
+							Escribir "Volviendo al menú principal..."
+							Escribir ""
+							Esperar 1 Segundos
+						De Otro Modo:
+							Borrar Pantalla
+							Escribir "No ha seleccionado una opcion valida"
+							Escribir ""
+							Esperar 1 Segundos
+					FinSegun
 					
-					1: PARTE_D_5()
-					2: PARTE_D_6()
-					3: PARTE_E_1()
-					4: PARTE_E_2()
-					5: PARTE_E_3()
-					6: PARTE_E_4()
-					7: PARTE_E_5()
-					8: PARTE_E_6()
-					9: PARTE_F_1()
-					10: PARTE_F_2()
-					11: PARTE_F_3()
-					12: PARTE_F_4()
-					13: PARTE_F_5()
-					14: PARTE_F_6()
-					15: PARTE_F_7()
-					0:  Borrar Pantalla
-						Escribir "Volviendo al menú principal..."
-						Escribir ""
-						Esperar 1 Segundos
-					De Otro Modo:
-						Borrar Pantalla
-						Escribir "No ha seleccionado una opcion valida"
-						Escribir ""
+				2:  Borrar Pantalla
+					Escribir "Estructuras Condicionales"
+					Escribir "1. Ejercicio #1" 
+					Escribir "2. Ejercicio #2"
+					Escribir "3. Ejercicio #3"
+					Escribir "4. Ejercicio #4"
+					Escribir "5. Ejercicio #5"
+					Escribir "6. Ejercicio #6"
+					Escribir "7. Ejercicio #7"
+					Escribir "8. Ejercicio #8"
+					Escribir "9. Ejercicio #9"
+					Escribir "10. Ejercicio #10"
+					Escribir "0. Volver al Menú principal"
+					Escribir ""
+					leer item2
+					
+					
+					segun item2 Hacer
 						
-				FinSegun
-				
-			4:  Borrar Pantalla
-				Escribir "Saliendo..."
-				Escribir ""
-				item2<-0
-			   
-			De Otro Modo:
-			   
-			   Escribir "No ha seleccionado una opcion valida"
+						1: PARTE_B_5()	
+						2: PARTE_B_6()
+						3: PARTE_C_1()
+						4: PARTEC_2()
+						5: PARTEC_3()
+						6: PARTEC_4()
+						7: PARTE_D_1()
+						8: PARTE_D_2()
+						9: PARTE_D_3()
+						10: PARTE_D_4()
+						0:  Borrar Pantalla
+							Escribir "Volviendo al menú principal..."
+							Escribir ""
+							Esperar 2 Segundos
+						De Otro Modo:
+							Borrar Pantalla
+							Escribir "No ha seleccionado una opcion valida"
+							Escribir ""
+							Esperar 2 Segundos
+							
+					FinSegun
+					
+				3:  Borrar Pantalla
+					Escribir "Estructuras Iterativas"
+					Escribir "1. Ejercicio #1" 
+					Escribir "2. Ejercicio #2"
+					Escribir "3. Ejercicio #3"
+					Escribir "4. Ejercicio #4"
+					Escribir "5. Ejercicio #5"
+					Escribir "6. Ejercicio #6"
+					Escribir "7. Ejercicio #7"
+					Escribir "8. Ejercicio #8"
+					Escribir "9. Ejercicio #9"
+					Escribir "10. Ejercicio #10"
+					Escribir "11. Ejercicio #11"
+					Escribir "12. Ejercicio #12"
+					Escribir "13. Ejercicio #13"
+					Escribir "14. Ejercicio #14"
+					Escribir "15. Ejercicio #15"
+					Escribir "0. Volver al Menú principal"
+					Escribir ""
+					
+					leer item2
+					
+					segun item2 Hacer
+						
+						1: PARTE_D_5()
+						2: PARTE_D_6()
+						3: PARTE_E_1()
+						4: PARTE_E_2()
+						5: PARTE_E_3()
+						6: PARTE_E_4()
+						7: PARTE_E_5()
+						8: PARTE_E_6()
+						9: PARTE_F_1()
+						10: PARTE_F_2()
+						11: PARTE_F_3()
+						12: PARTE_F_4()
+						13: PARTE_F_5()
+						14: PARTE_F_6()
+						15: PARTE_F_7()
+						0:  Borrar Pantalla
+							Escribir "Volviendo al menú principal..."
+							Escribir ""
+							Esperar 1 Segundos
+						De Otro Modo:
+							Borrar Pantalla
+							Escribir "No ha seleccionado una opcion valida"
+							Escribir ""
+							Esperar 1 Segundos
+					FinSegun
+					
+				4:  Borrar Pantalla
+					Escribir "Saliendo..."
+					Escribir ""
+					item2<-0
+					
+				De Otro Modo:
+					
+					Escribir "No ha seleccionado una opcion valida"
 			   Escribir "Ingrese otra opcion"
 			   leer item
 			
@@ -1234,3 +1300,4 @@ Algoritmo EXPOALGORITMO
         FinMientras
 	FinMientras
 FinAlgoritmo
+
